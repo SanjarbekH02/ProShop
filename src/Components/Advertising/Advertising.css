@@ -1,0 +1,46 @@
+.advertising{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(56, 56, 99, 0.724);
+    position: relative;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 150px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.advertising-left{
+    width: 300px;
+    padding-left: 50px;
+}
+
+.adven-left-title{
+    color: white;
+    font-size: 70px;
+    /* padding-left: 50px; */
+}
+
+.adven-desc{
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.727);
+}
+
+.adven-img{
+    position: absolute;
+    top: -190px;
+    left: 60px;
+    width: 75%;
+}
+
+.advertising-right{
+    width: 35%;
+}
+
+.adven-right-title{
+    font-size: 24px;
+    color: white;
+    
+}

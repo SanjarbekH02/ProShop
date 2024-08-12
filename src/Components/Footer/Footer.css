@@ -1,0 +1,67 @@
+.footer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.logo-block{
+    width: 250px;
+    /* height: 300px; */
+    margin: 20px 0;
+}
+
+.logo-img{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.footer-desc{
+    font-size: 12px;
+    color: rgb(142, 141, 138);
+}
+
+
+.footer-nav{
+    width: 150px;
+    margin: 20px 0;
+    /* height: 300px; */
+}
+
+.footer-list{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item{
+    padding: 3px 0;
+}
+
+.footer-link{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(142, 141, 138);
+    padding: 5px 0;
+}
+
+.footer-link:hover{
+    color: black;
+}
+
+.contacts{
+    width: 130px!important;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.footer-submit{
+    width: 300px;
+    /* height: 300px; */
+}
+
+.footer-btn{
+    font-size: 10px;
+}

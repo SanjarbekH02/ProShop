@@ -1,0 +1,18 @@
+.products-table{
+    font-size: 14px!important;
+}
+
+.products-info-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.products-info-img{
+    width: 50%;
+}
+
+.products-info-right{
+    width: 40%;
+}
