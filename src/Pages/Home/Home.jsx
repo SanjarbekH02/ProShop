@@ -5,12 +5,12 @@ import Curier from '../../Img/kurier.svg'
 import Guarantee from '../../Img/kafolat.svg'
 import Faq from '../../Img/naush.svg'
 import Payment from '../../Img/tolov.svg'
-import Advertising from '../Advertising/Advertising';
-import Products from '../Products/Products';
-import AutumnAdversiting from '../AutumnAdversiting/AutumnAdversiting';
-import AutumnCollection from '../AutumnCollection/AutumnCollection';
-import SummerAdversiting from '../SummerAdversiting/SummerAdversiting';
-import SummerCollection from '../SummerCollection/SummerCollection';
+import Advertising from '../../Components/Advertising/Advertising';
+import Products from '../../Components/Products/Products';
+import AutumnAdversiting from '../../Components/AutumnAdversiting/AutumnAdversiting';
+import AutumnCollection from '../../Components/AutumnCollection/AutumnCollection';
+import SummerAdversiting from '../../Components/SummerAdversiting/SummerAdversiting';
+import SummerCollection from '../../Components/SummerCollection/SummerCollection';
 
 const Home = ({onItemSelect}) => {
     return (

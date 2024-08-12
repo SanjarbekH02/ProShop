@@ -2,8 +2,6 @@ import React from 'react';
 import InnerImageZoom from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import './ProductsWiew.css'
-import Products from '../Products/Products';
-
 const ProductsWiew = ({ selectedData }) => {
     if (!selectedData) {
         return <p>Choose an item</p>;

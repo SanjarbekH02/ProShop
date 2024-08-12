@@ -25,7 +25,7 @@ const Navbar = () => {
                             <Link to={'/collection'} className="nav-link">To'plam</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link className="nav-link">Biz haqimizda</Link>
+                            <a href='#footer' className="nav-link">Biz haqimizda</a>
                         </li>
 
                         <li className="nav-item">
