@@ -10,7 +10,6 @@ import WinterImg7 from '../../Img/qish7.jpg'
 import WinterImg8 from '../../Img/qish8.jpg'
 import WinterImg9 from '../../Img/qish9.jpg'
 import WinterImg10 from '../../Img/qish10.jpg'
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
@@ -106,7 +105,7 @@ const Products = ({onItemSelect}) => {
             <div className="products-block">
                 {
                     winterData.map((item, id) => (
-                        <Link href='#navbar' to={'/products'} key={item.id} onClick={() => onItemSelect(item)} className="products-card">
+                        <Link to={'/products'} key={item.id} onClick={() => onItemSelect(item)} className="products-card">
                             <img src={item.img} alt="" className="products-img" />
                             <h4 className="products-block-title">{item.title}</h4>
                         </Link>

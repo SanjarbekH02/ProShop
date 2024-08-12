@@ -11,6 +11,7 @@ import Footer from './Components/Footer/Footer.jsx';
 import { useState } from 'react';
 import ProductsWiew from './Components/ProductsWiew/ProductsWiew.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Collection from './Components/Collection/Collection.jsx';
 
 function App() {
 
@@ -26,6 +27,8 @@ function App() {
 
             <Route path='/' element={<Home onItemSelect={setSelectedData} />} />
             <Route path='/products' element={<ProductsWiew selectedData={selectedData} />} />
+            <Route path='/collection' element={<Collection onItemSelect={setSelectedData} />} />
+
           </Route>
         </Routes>
         <Footer />

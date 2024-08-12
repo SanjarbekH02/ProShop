@@ -2,17 +2,6 @@ import React from 'react';
 import LogoImg from '../../Img/logo.png'
 import { Link } from 'react-router-dom';
 
-const data = [
-    {
-        img: LogoImg
-    },
-
-    {
-        img: LogoImg
-    }
-
-
-]
 
 const Navbar = () => {
 
@@ -33,7 +22,7 @@ const Navbar = () => {
                             <Link  to={'/'} className="nav-link active" aria-current="page">Uy</Link>
                         </li>
                         <li className="nav-item me-4">
-                            <Link to={'/'} className="nav-link">To'plam</Link>
+                            <Link to={'/collection'} className="nav-link">To'plam</Link>
                         </li>
                         <li className="nav-item me-4">
                             <Link className="nav-link">Biz haqimizda</Link>

@@ -9,6 +9,8 @@ import Advertising from '../Advertising/Advertising';
 import Products from '../Products/Products';
 import AutumnAdversiting from '../AutumnAdversiting/AutumnAdversiting';
 import AutumnCollection from '../AutumnCollection/AutumnCollection';
+import SummerAdversiting from '../SummerAdversiting/SummerAdversiting';
+import SummerCollection from '../SummerCollection/SummerCollection';
 
 const Home = ({onItemSelect}) => {
     return (
@@ -62,7 +64,9 @@ const Home = ({onItemSelect}) => {
             <Advertising />
             <Products onItemSelect={onItemSelect} />
             <AutumnAdversiting />
-            <AutumnCollection />
+            <AutumnCollection onItemSelect={onItemSelect}  />
+            <SummerAdversiting />
+            <SummerCollection onItemSelect={onItemSelect} />
         </div>
     );
 }
