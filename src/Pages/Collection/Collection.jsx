@@ -3,7 +3,7 @@ import Products from '../../Components/Products/Products';
 import AutumnCollection from '../../Components/AutumnCollection/AutumnCollection';
 import SummerCollection from '../../Components/SummerCollection/SummerCollection';
 
-const Collection = ({onItemSelect}) => {
+const Collection = ({onItemSelect, }) => {
     return (
         <div>
             <Products onItemSelect={onItemSelect} />

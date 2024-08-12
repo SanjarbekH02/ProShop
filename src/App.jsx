@@ -28,7 +28,7 @@ function App() {
           <Route path='/'>
 
             <Route path='/' element={<Home onItemSelect={setSelectedData} />} />
-            <Route path='/products' element={<ProductsWiew selectedData={selectedData} />} />
+            <Route path='/products' element={<ProductsWiew  selectedData={selectedData} />} />
             <Route path='/collection' element={<Collection onItemSelect={setSelectedData} />} />
 
           </Route>
