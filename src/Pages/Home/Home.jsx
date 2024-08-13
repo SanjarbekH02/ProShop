@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Home.css'
 import HomeImg from '../../Img/home.png'
 import Curier from '../../Img/kurier.svg'
@@ -13,6 +14,9 @@ import SummerAdversiting from '../../Components/SummerAdversiting/SummerAdversit
 import SummerCollection from '../../Components/SummerCollection/SummerCollection';
 
 const Home = ({onItemSelect}) => {
+
+    const {t} = useTranslation()
+
     return (
         <div>
             <div className="home">
@@ -21,9 +25,9 @@ const Home = ({onItemSelect}) => {
                 </div>
                 <div className="home-right">
                     <div className="home-right-block">
-                        <h4 className="home-city">Buxoro</h4>
-                        <h3 className="home-title">Tabiy</h3>
-                        <h1 className="home-produc-title">Mahsulotlar</h1>
+                        <h4 className="home-city">{t('homeTitle')}</h4>
+                        <h3 className="home-title">{t('homeTitle2')}</h3>
+                        <h1 className="home-produc-title">{t('homeTitle3')}</h1>
                     </div>
                 </div>
             </div>
@@ -32,32 +36,32 @@ const Home = ({onItemSelect}) => {
                 <div className="info-card">
                     <img src={Curier} alt="kurier rasmi" className="curier" />
                     <div className="info-card-block">
-                        <h5 className="info-title">Yetkazib berish bepul</h5>
-                        <p className="info-desc">Barcha buyurtmalar uchun bepul yetkazib berish</p>
+                        <h5 className="info-title">{t('infoTitle')}</h5>
+                        <p className="info-desc">{t('infoDesc')}</p>
                     </div>
                 </div>
 
                 <div className="info-card">
                     <img src={Guarantee} alt="kurier rasmi" className="curier" />
                     <div className="info-card-block">
-                        <h5 className="info-title">Qaytish kafolati</h5>
-                        <p className="info-desc">30 kunlik pulni qaytarish</p>
+                        <h5 className="info-title">{t('infoTitle2')}</h5>
+                        <p className="info-desc">{t('infoDesc2')}</p>
                     </div>
                 </div>
 
                 <div className="info-card">
                     <img src={Faq} alt="kurier rasmi" className="curier" />
                     <div className="info-card-block">
-                        <h5 className="info-title">24/7 onlayn qo'llab-quvvatlash</h5>
-                        <p className="info-desc">24/7 texnik yordam</p>
+                        <h5 className="info-title">{t('infoTitle3')}</h5>
+                        <p className="info-desc">{t('infoDesc3')}</p>
                     </div>
                 </div>
 
                 <div className="info-card">
                     <img src={Payment} alt="kurier rasmi" className="curier" />
                     <div className="info-card-block">
-                        <h5 className="info-title">Xavfsiz to'lov</h5>
-                        <p className="info-desc">Barcha to'lov usullari qabul qilinadi</p>
+                        <h5 className="info-title">{t('infoTitle4')}</h5>
+                        <p className="info-desc">{t('infoDesc4')}</p>
                     </div>
                 </div>
             </div>

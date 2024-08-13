@@ -13,6 +13,8 @@ import ProductsWiew from './Pages/ProductsWiew/ProductsWiew.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Collection from './Pages/Collection/Collection.jsx';
 import ScrollToTop from './Components/ScrollTop/ScrollTop.jsx';
+import About from './Pages/About/About.jsx';
+import Products from './Components/Products/Products.jsx';
 
 function App() {
 
@@ -28,8 +30,9 @@ function App() {
           <Route path='/'>
 
             <Route path='/' element={<Home onItemSelect={setSelectedData} />} />
-            <Route path='/products' element={<ProductsWiew  selectedData={selectedData} />} />
+            <Route path='/products' element={<ProductsWiew selectedData={selectedData} />} />
             <Route path='/collection' element={<Collection onItemSelect={setSelectedData} />} />
+            <Route path='/about' element={<About />} />
 
           </Route>
         </Routes>

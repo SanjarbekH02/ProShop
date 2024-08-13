@@ -17,6 +17,11 @@
     width: 40%;
 }
 
+.description-block{
+    width: 80%;
+    margin: auto;
+}
+
 @media only screen and (max-width: 780px){
     
     .products-info-block{
@@ -29,6 +34,10 @@
     }
     
     .products-info-right{
+        width: 100%;
+    }
+
+    .description-block{
         width: 100%;
     }
 }

@@ -1,0 +1,28 @@
+.collection{
+    display: flex;
+    align-items: flex-start;
+}
+
+.collection-left{
+    width: 300px;
+    margin-top: 40px;
+    /* border-right: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-link{
+    width: 100%;
+    color: rgb(148, 141, 141);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 0;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.collection-link:hover{
+    color: red;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}

@@ -1,22 +1,26 @@
-// import i18next from "i18next";
-// import { initReactI18next } from "react-i18next";
-// import I18NextHttpBackend from "i18next-http-backend";
-// import languageDetoctor from 'i18next-browser-languagedetector'
-// import uzTranslation from '../public/locales/uz.json'
-// import ruTranslation from '../public/locales/ru.json'
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import I18NextHttpBackend from "i18next-http-backend";
+import languageDetoctor from 'i18next-browser-languagedetector'
+import uzTranslation from './locales/uz.json'
+import ruTranslation from './locales/ru.json'
+import enTranslation from './locales/en.json'
 
-// i18n
-// .use(I18NextHttpBackend)
-// .use(languageDetoctor)
-// .use(initReactI18next)
-// .init({
-//     fallbackLng : 'uz',
-//     lng : 'uz',
-//     debug : true,
-//     resources : {
-//         uz:{translation: uzTranslation},
-//         ru:{translation: ruTranslation}
-//     }
-// })
+const laungage = localStorage.getItem('i18nextLng') || 'uz'
 
-// export default i18n;
+i18n
+.use(I18NextHttpBackend)
+.use(languageDetoctor)
+.use(initReactI18next)
+.init({
+    fallbackLng : 'uz',
+    lng : laungage,
+    debug : true,
+    resources : {
+        uz:{translation: uzTranslation},
+        ru:{translation: ruTranslation},
+        en:{translation: enTranslation}
+    }
+})
+
+export default i18n;

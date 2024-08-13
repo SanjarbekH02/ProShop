@@ -1,0 +1,37 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.about-left{
+    width: 40%;
+}
+
+.about-desc{
+    font-size: 14px;
+    color: rgb(111, 106, 106);
+}
+
+.about-img{
+    width: 50%;
+}
+
+@media only screen and (max-width: 1000px){
+    .about{
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+
+    .about-left{
+        width: 100%;
+    }
+
+    .about-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}

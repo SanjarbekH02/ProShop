@@ -10,75 +10,88 @@ import SummerImg8 from '../../Img/yoz8.jpg'
 import SummerImg9 from '../../Img/yoz9.jpg'
 import SummerImg10 from '../../Img/yoz10.jpg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-const SummerData = [
-    {
-        title: 'Vintage uslubi',
-        img: SummerImg,
-        id: 1,
-    },
-
-    {
-        title: "hilpiragan karahindiba",
-        img: SummerImg2,
-        id: 2,
-    },
-
-    {
-        title: 'Fransuz Riviera',
-        img: SummerImg3,
-        id: 3
-    },
-
-    {
-        title: "Qo'y Dolli",
-        img: SummerImg4,
-        id: 4,
-    },
-
-    {
-        title: "Alp tog'lari o'simliklari",
-        img: SummerImg5,
-        id: 5,
-    },
-
-    {
-        title: 'Ilhomlantiruvchi',
-        img: SummerImg6,
-        id: 6,
-    },
-
-    {
-        title: 'Yashil lotus',
-        img: SummerImg7,
-        id: 7,
-    },
-
-    {
-        title: "Tog'li makkajo'xori",
-        img: SummerImg8,
-        id: 8,
-    },
-
-    {
-        title: 'Sakura filiali',
-        img: SummerImg9,
-        id: 9,
-    },
-
-    {
-        title: 'Zaytun novdasi',
-        img: SummerImg10,
-        id: 10,
-    }
-]
 
 
 const SummerCollection = ({onItemSelect}) => {
+    const {t, i18n} = useTranslation()
+    const SummerData = [
+        {
+            title: t('summerData'),
+            img: SummerImg,
+            id: 1,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData2'),
+            img: SummerImg2,
+            id: 2,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData3'),
+            img: SummerImg3,
+            id: 3,
+            cotegory: t('cotegorySummer')
+
+        },
+    
+        {
+            title: t('summerData4'),
+            img: SummerImg4,
+            id: 4,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData5'),
+            img: SummerImg5,
+            id: 5,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData6'),
+            img: SummerImg6,
+            id: 6,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData7'),
+            img: SummerImg7,
+            id: 7,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData8'),
+            img: SummerImg8,
+            id: 8,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData9'),
+            img: SummerImg9,
+            id: 9,
+            cotegory: t('cotegorySummer')
+        },
+    
+        {
+            title: t('summerData10'),
+            img: SummerImg10,
+            id: 10,
+            cotegory: t('cotegorySummer')
+        }
+    ]
     return (
         <div className='products'>
-            <h1 className="products-title">Yoz kolleksiyasi</h1>
-            <p className="products-desc">Buxoro tabiiy mahsuloti</p>
+            <h1 className="products-title">{t('summerTitle')}</h1>
+            <p className="products-desc">{t('product')}</p>
             <div className="products-block">
                 {
                     SummerData.map((item, id) => (

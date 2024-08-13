@@ -1,12 +1,25 @@
-.navbar{
-    background: white!important;
+.navbar {
+    background: white !important;
 }
-.navbar-brand{
+
+.navbar-brand {
     width: 90px;
 }
 
-.image-logo{
+.image-logo {
     width: 100px;
-    height: 50px!important;
+    height: 50px !important;
 }
 
+.nav-select-item {
+    margin-left: auto;
+
+}
+
+.nav-select {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid rgb(165, 154, 154);
+    border-radius: 10px;
+    margin-left: auto;
+}

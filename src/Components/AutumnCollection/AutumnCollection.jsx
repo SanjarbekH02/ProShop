@@ -10,75 +10,87 @@ import AutumnImg8 from '../../Img/kuz8.jpg'
 import AutumnImg9 from '../../Img/kuz9.jpg'
 import AutumnImg10 from '../../Img/kuz10.jpg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-
-const AutumnData = [
-    {
-        title: 'Safari',
-        img: AutumnImg,
-        id: 1,
-    },
-
-    {
-        title: "Ko'p rangli ametist",
-        img: AutumnImg2,
-        id: 2,
-    },
-
-    {
-        title: 'shlyapali bezak',
-        img: AutumnImg3,
-        id: 3
-    },
-
-    {
-        title: "Zumrad (AB)",
-        img: AutumnImg4,
-        id: 4,
-    },
-
-    {
-        title: 'Malaxit qutisi',
-        img: AutumnImg5,
-        id: 5,
-    },
-
-    {
-        title: 'Bahorning hidlari',
-        img: AutumnImg6,
-        id: 6,
-    },
-
-    {
-        title: 'Kuzgi barglar tushishi (AB)',
-        img: AutumnImg7,
-        id: 7,
-    },
-
-    {
-        title: 'Moviy shabada (AB)',
-        img: AutumnImg8,
-        id: 8,
-    },
-
-    {
-        title: 'Moviy suv (AB)',
-        img: AutumnImg9,
-        id: 9,
-    },
-
-    {
-        title: 'Plaid',
-        img: AutumnImg10,
-        id: 10,
-    }
-]
 
 const AutumnCollection = ({onItemSelect}) => {
+
+    const {t, i18n} = useTranslation()
+
+    const AutumnData = [
+        {
+            title: t('autumnData'),
+            img: AutumnImg,
+            id: 1,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData2'),
+            img: AutumnImg2,
+            id: 2,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData3'),
+            img: AutumnImg3,
+            id: 3,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData4'),
+            img: AutumnImg4,
+            id: 4,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData5'),
+            img: AutumnImg5,
+            id: 5,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData6'),
+            img: AutumnImg6,
+            id: 6,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData7'),
+            img: AutumnImg7,
+            id: 7,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData8'),
+            img: AutumnImg8,
+            id: 8,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData9'),
+            img: AutumnImg9,
+            id: 9,
+            cotegory: t('cotegoryAutumn')
+        },
+    
+        {
+            title: t('autumnData10'),
+            img: AutumnImg10,
+            id: 10,cotegory: t('cotegoryAutumn')
+        }
+    ]
     return (
         <div className='products'>
-            <h1 className="products-title">Kuz kolleksiyasi</h1>
-            <p className="products-desc">Buxoro tabiiy mahsuloti</p>
+            <h1 className="products-title">{t('autumnTitle')}</h1>
+            <p className="products-desc">{t('product')}</p>
             <div className="products-block">
                 {
                     AutumnData.map((item, id) => (

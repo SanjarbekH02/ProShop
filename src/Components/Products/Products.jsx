@@ -11,97 +11,90 @@ import WinterImg8 from '../../Img/qish8.jpg'
 import WinterImg9 from '../../Img/qish9.jpg'
 import WinterImg10 from '../../Img/qish10.jpg'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 
-const winterData = [
-    {
-        title: 'Kvadratchalar',
-        img: WinterImg,
-        id: 1,
-        descriptionTitle: "Choyshablar to'plami Kvadratchalar",
-        description: ""
-    },
 
-    {
-        title: "Ikat",
-        img: WinterImg2,
-        id: 2,
-        descriptionTitle: "Choyshablar to'plami Ikat",
-        description: ""
-    },
-
-    {
-        title: 'Davralar',
-        img: WinterImg3,
-        id: 3,
-        descriptionTitle: "Choyshablar to'plami Davralar",
-        description: ""
-    },
-
-    {
-        title: "Geometriya ko'k",
-        img: WinterImg4,
-        id: 4,
-        descriptionTitle: "Choyshablar to'plami Geometriya ko'k",
-        description: ""
-    },
-
-    {
-        title: 'Tropik barglar',
-        img: WinterImg5,
-        id: 5,
-        descriptionTitle: "Choyshablar to'plami Tropik barglar",
-        description: ""
-    },
-
-    {
-        title: 'Bambi',
-        img: WinterImg6,
-        id: 6,
-        descriptionTitle: "Choyshablar to'plami Bambi",
-        description: ""
-    },
-
-    {
-        title: 'Vizantiya',
-        img: WinterImg7,
-        id: 7,
-        descriptionTitle: "Choyshablar to'plami Vizantiya",
-        description: ""
-    },
-
-    {
-        title: 'Kechki bog',
-        img: WinterImg8,
-        id: 8,
-        descriptionTitle: "Choyshablar to'plami Kechki bog",
-        description: ""
-    },
-
-    {
-        title: 'Pat Markiz',
-        img: WinterImg9,
-        id: 9,
-        descriptionTitle: "Choyshablar to'plami Pat Markiz",
-        description: ""
-    },
-
-    {
-        title: 'Lavanda atirgullari',
-        img: WinterImg10,
-        id: 10,
-        descriptionTitle: "Choyshablar to'plami Lavanda atirgullari",
-        description: ""
-    }
-]
 
 const Products = ({onItemSelect}) => {
+    const {t,i18n} = useTranslation()
+    const winterData = [
+        {
+            title: t('winterData'),
+            img: WinterImg,
+            id: 1,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData2'),
+            img: WinterImg2,
+            id: 2,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData3'),
+            img: WinterImg3,
+            id: 3,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData4'),
+            img: WinterImg4,
+            id: 4,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData5'),
+            img: WinterImg5,
+            id: 5,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData6'),
+            img: WinterImg6,
+            id: 6,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData7'),
+            img: WinterImg7,
+            id: 7,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData8'),
+            img: WinterImg8,
+            id: 8,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData9'),
+            img: WinterImg9,
+            id: 9,
+            cotegory: t('cotegoryWinter')
+        },
+    
+        {
+            title: t('winterData10'),
+            img: WinterImg10,
+            id: 10,
+            cotegory: t('cotegoryWinter')
+        }
+    ]
 
     return (
         <div className='products'>
-            <h1 className="products-title">Qish kolleksiyasi</h1>
-            <p className="products-desc">Buxoro tabiiy mahsuloti</p>
+            <h1 className="products-title">{t('winterTitle')}</h1>
+            <p className="products-desc">{t('product')}</p>
             <div className="products-block">
                 {
                     winterData.map((item, id) => (

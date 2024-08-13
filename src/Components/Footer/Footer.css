@@ -1,6 +1,6 @@
 .footer{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start!important;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 80px;
@@ -8,7 +8,7 @@
 
 .logo-block{
     width: 250px;
-    /* height: 300px; */
+    height: 250px;
     margin: 20px 0;
 }
 
@@ -26,7 +26,8 @@
 .footer-nav{
     width: 150px;
     margin: 20px 0;
-    /* height: 300px; */
+    height: 250px;
+
 }
 
 .footer-list{
@@ -51,7 +52,7 @@
 
 .contacts{
     width: 130px!important;
-    /* height: 300px; */
+    height: 250px;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
@@ -59,7 +60,9 @@
 
 .footer-submit{
     width: 300px;
-    /* height: 300px; */
+    height: 250px;
+    margin-top: 20px;
+
 }
 
 .footer-btn{

@@ -1,3 +1,7 @@
 .autumn{
     background-color: rgba(14, 14, 88, 0.808);
 }
+
+.collec-btn{
+    z-index: 99;
+}
