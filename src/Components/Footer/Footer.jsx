@@ -14,13 +14,10 @@ const Footer = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-
-        const token = "7273767488:AAGBFGEZCkTVcpaT0VEVDNYEkbvB5uHMPSY"
-        const botId = 954540465;
         
 
-        const botToken = token;
-        const chatId = botId;        
+        const botToken = "7273767488:AAGBFGEZCkTVcpaT0VEVDNYEkbvB5uHMPSY";
+        const chatId = 954540465;        
 
         try {
             // Telegram API-ga so'rov yuborish
