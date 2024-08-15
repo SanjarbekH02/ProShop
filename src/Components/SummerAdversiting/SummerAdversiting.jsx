@@ -2,6 +2,7 @@ import React from 'react';
 import './SummerAdversiting.css'
 import AdvenImg from '../../Img/spalni3.png'
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const SummerAdversiting = () => {
     const {t, i18n} = useTranslation()
@@ -18,7 +19,7 @@ const SummerAdversiting = () => {
             <div className="advertising-right">
                 <h1 className="adven-right-title">{t('advenTitle2')}</h1>
                 <p className="adven-desc">{t('advenTitle3')}</p>
-                <button className="btn btn-light p-2 pe-5 ps-5 rounded-pill color-primary">{t('colletionBtn')}</button>
+                <Link to={'/collection'} className="btn btn-light p-2 pe-5 ps-5 rounded-pill color-primary collec-btn">{t('colletionBtn')}</Link >
             </div>
         </div>
     );

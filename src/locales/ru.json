@@ -82,5 +82,9 @@
     "autumnData8" : "Синий ветер (АБ)",
     "autumnData9" : "Синяя вода (АБ)",
     "autumnData10" : "Плэд",
-    "cotegoryAutumn" : "Осенняя коллекция"
+    "cotegoryAutumn" : "Осенняя коллекция",
+    "buttonText" : "Подписаться",
+    "modalText" : "Ваш запрос принят!!!"
+
+    
 }

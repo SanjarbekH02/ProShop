@@ -82,5 +82,8 @@
     "autumnData8" : "Blue Breeze (AB)",
     "autumnData9" : "Blue Water (AB)",
     "autumnData10" : "Plaid",
-    "cotegoryAutumn" : "Autumn Collection"
+    "cotegoryAutumn" : "Autumn Collection",
+    "buttonText" : "subscribe",
+    "modalText" : "Your request has been accepted!!!"
+
 }

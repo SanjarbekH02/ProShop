@@ -1,11 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css'
 import LogoImg from '../../Img/logo.png'
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import axios from 'axios'
+import  Modal  from '../../Components/Modal/Modal';
 
 const Footer = () => {
-    const {t, i18n} = useTranslation()
+    const [modalOpen, setModalOpen] = useState(false)
+    const [message, setMessage] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const token = "7273767488:AAGBFGEZCkTVcpaT0VEVDNYEkbvB5uHMPSY"
+        const botId = 954540465;
+        
+
+        const botToken = token;
+        const chatId = botId;        
+
+        try {
+            // Telegram API-ga so'rov yuborish
+            await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                chat_id: chatId,
+                text: message,
+            });
+
+            setModalOpen(true)
+            setMessage('');
+        } catch (error) {
+            alert('Xatolik yuz berdi!');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+
+    const { t, i18n } = useTranslation()
     return (
         <div id='footer' className='footer'>
             <div className="logo-block">
@@ -17,9 +51,9 @@ const Footer = () => {
             <div className="footer-nav">
                 <h6 className="nav-title">{t('menu')}</h6>
                 <ul className="footer-list">
-                    <Link className="footer-item">
-                        <Link  to={'/'} clLinkssName="footer-link">{t('home')}</Link>
-                    </Link>
+                    <li className="footer-item">
+                        <Link to={'/collection'} className="footer-link">{t('home')}</Link>
+                    </li>
                     <li className="footer-item">
                         <Link to={'/collection'} className="footer-link">{t('collection')}</Link>
                     </li>
@@ -42,12 +76,14 @@ const Footer = () => {
 
             <div className="footer-submit">
                 <h6 className="nav-title">{t('email')}</h6>
-                <div className="input-group pt-3 pb-3">
-                    <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                    <button type="button" className="btn bg-danger text-light footer-btn" data-mdb-ripple-init>Obuna bo'ling</button>
-                </div >
+                <form onSubmit={handleSubmit} className="input-group pt-3 pb-3">
+                    <input value={message}  onChange={(e) => setMessage(e.target.value)} required type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="submit" className="btn bg-danger text-light footer-btn" data-mdb-ripple-init>{t('buttonText')}</button>
+                </form >
                 <p className="footer-link">{t('emailReg')}</p>
             </div>
+
+            <Modal openModal={modalOpen} setOpenModal={setModalOpen}/>
         </div>
     );
 }

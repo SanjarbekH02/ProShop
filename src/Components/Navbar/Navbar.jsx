@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
 import LogoImg from '../../Img/logo.png'
 import { Link } from 'react-router-dom';
 import './Navbar.css'
@@ -48,6 +47,7 @@ const Navbar = () => {
                     </select>
                 </div>
             </div>
+
         </nav>
 
     );

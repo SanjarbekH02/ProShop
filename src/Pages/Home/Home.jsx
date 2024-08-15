@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './Home.css'
 import HomeImg from '../../Img/home.png'
@@ -14,6 +14,7 @@ import SummerAdversiting from '../../Components/SummerAdversiting/SummerAdversit
 import SummerCollection from '../../Components/SummerCollection/SummerCollection';
 
 const Home = ({onItemSelect}) => {
+
 
     const {t} = useTranslation()
 
