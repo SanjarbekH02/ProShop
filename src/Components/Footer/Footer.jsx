@@ -49,13 +49,13 @@ const Footer = () => {
                 <h6 className="nav-title">{t('menu')}</h6>
                 <ul className="footer-list">
                     <li className="footer-item">
-                        <Link to={'/collection'} className="footer-link">{t('home')}</Link>
+                        <Link to={'/'} className="footer-link">{t('home')}</Link>
                     </li>
                     <li className="footer-item">
                         <Link to={'/collection'} className="footer-link">{t('collection')}</Link>
                     </li>
                     <li className="footer-item">
-                        <a href="#footer" className="footer-link">{t('about')}</a>
+                        <Link to={'/about'} className="footer-link">{t('about')}</Link>
                     </li>
                     <li className="footer-item">
                         <a href="#footer" className="footer-link">{t('contacts')}</a>
