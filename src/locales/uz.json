@@ -84,7 +84,12 @@
     "autumnData10" : "Plaid",
     "cotegoryAutumn" : "Kuzgi kolleksiya",
     "buttonText" : "Obuna bo'ling",
-    "modalText" : "Sizning so'rov qabul qilindi!!!"
-    
+    "modalText" : "Sizning so'rov qabul qilindi!!!",
+    "news" : "Yangiliklar",
+    "newsData" : "10/05/2019  admin tomonidan",
+    "newsTitle" : "Qanday qilib mukammal gadjetlarni tanlash mumkin",
+    "newsDesc" : "Go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepalikka urilganda ...",
+    "newsDesc2" : "Qachonki, go'zal vodiy atrofimni bug' bilan to'ldirganda va meridian quyoshi tepaga urilganda ...",
+    "newsDesc3" : "Lorem Ipsumning ko'plab o'zgarishlari mavjud, ammo ularning aksariyati o'zgarishlardan aziyat chekdi ..."
     
 }

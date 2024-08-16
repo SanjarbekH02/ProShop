@@ -84,6 +84,13 @@
     "autumnData10" : "Plaid",
     "cotegoryAutumn" : "Autumn Collection",
     "buttonText" : "subscribe",
-    "modalText" : "Your request has been accepted!!!"
+    "modalText" : "Your request has been accepted!!!",
+    "news" : "News",
+    "newsData" : "10/05/2019  by admin",
+    "newsTitle" : "How to choose perfect gadgets",
+    "newsDesc" : "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper s...",
+    "newsDesc2" : "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper...",
+    "newsDesc3" : "There are many variations passages of Lorem Ipsum available, but the majority have suffered alterat ..."
+    
 
 }

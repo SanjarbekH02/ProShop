@@ -1,0 +1,40 @@
+.news{
+    margin-bottom: 40px;
+}
+
+.news-block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+.news-card{
+    width: 300px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.news-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-date{
+    font-size: 12px;
+    color: rgb(138, 129, 129);
+}
+
+.news-title{
+    color: black;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.news-desc{
+    font-size: 12px;
+    color: rgb(138, 129, 129); 
+}

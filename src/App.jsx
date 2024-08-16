@@ -14,7 +14,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Collection from './Pages/Collection/Collection.jsx';
 import ScrollToTop from './Components/ScrollTop/ScrollTop.jsx';
 import About from './Pages/About/About.jsx';
-import Products from './Components/Products/Products.jsx';
+import News from './Components/News/News.jsx';
 
 function App() {
 
@@ -36,6 +36,7 @@ function App() {
 
           </Route>
         </Routes>
+        <News />
         <Footer />
       </BrowserRouter>
     </div>
