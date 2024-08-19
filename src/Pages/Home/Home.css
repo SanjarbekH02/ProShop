@@ -57,9 +57,10 @@
 }
 
 .info{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 50px 0;
     margin-bottom: 100px;
@@ -68,6 +69,7 @@
 .info-card{
     width: 250px;
     display: flex;
+    margin: 0 10px;
 }
 
 .curier{
@@ -120,6 +122,10 @@
     
     .home-produc-title{
         font-size: 45px;
+    }
+
+    .info-card{
+        width: 100%;
     }
 }
 
